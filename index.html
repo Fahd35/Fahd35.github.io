@@ -7,79 +7,7 @@
 
 <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
 <style class="cp-pen-styles">.☯ {
-	display: flex;
-	align-items: center;
-	width: $d; height: $d;
-	border-radius: 50%;
-	background: $line, 
-		linear-gradient(black 50%, white 0);
-	
-	&:before, &:after {
-		flex: 1;
-		border: solid $d/6 transparent;
-		height: $d/6;
-		border-radius: 50%;
-		background: $line, 
-			linear-gradient(black, black) content-box, 
-			linear-gradient(white, white) border-box;
-		animation: a1 3s ease-in-out infinite;
-		content: ''
-	}
-	
-	&:after {
-		background: $line, 
-			linear-gradient(white, white) content-box, 
-			linear-gradient(black, black) border-box;
-		animation-name: a2;
-	}
-}
 
-@keyframes a1 {
-	0% { transform: translatex(-50vw) }
-	40%, 100% { transform: translatex(0) }
-}
-
-@keyframes a2{
-	0%, 40% { transform: translatex(50vw) }
-	80%, 100% { transform: translatex(0) }
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
-  border-radius: 100%;
-}
-
-@media screen and (min-width: 480px) {
-
-	*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Nunito', sans-serif;
@@ -178,7 +106,8 @@ body {
   <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign Up Form</title>
+        <title>Login Page</title>
+	  <link href = "shortcut icon" href = "photo.jpg">
         <link rel="stylesheet" href="css/normalize.css">
         <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
